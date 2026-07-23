@@ -150,7 +150,7 @@ section{padding:88px 0;}
 }
 .hero-dot{width:7px;height:7px;border-radius:50%;background:rgba(255,255,255,.4);cursor:pointer;transition:all .3s var(--ease);}
 .hero-dot.active{background:var(--gold-500);width:22px;border-radius:4px;}
-.hero-content{position:relative;z-index:1;padding:60px 0 90px;width:100%;}
+.hero-content{position:relative;z-index:1;padding-top:60px;padding-bottom:90px;width:100%;}
 .hero-texts{position:relative;min-height:240px;}
 .hero-text{
   position:absolute;left:0;right:0;top:0;opacity:0;pointer-events:none;
