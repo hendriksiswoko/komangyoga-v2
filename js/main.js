@@ -111,13 +111,26 @@ if (reviewTrack) {
     }
   };
   renderReviews();
+  let reviewTimer = setInterval(() => {
+    reviewStart = (reviewStart + 1) % reviewData.length;
+    renderReviews();
+  }, 4500);
+  const restartReviewTimer = () => {
+    clearInterval(reviewTimer);
+    reviewTimer = setInterval(() => {
+      reviewStart = (reviewStart + 1) % reviewData.length;
+      renderReviews();
+    }, 4500);
+  };
   document.querySelector('.review-arrow.next')?.addEventListener('click', () => {
     reviewStart = (reviewStart + 1) % reviewData.length;
     renderReviews();
+    restartReviewTimer();
   });
   document.querySelector('.review-arrow.prev')?.addEventListener('click', () => {
     reviewStart = (reviewStart - 1 + reviewData.length) % reviewData.length;
     renderReviews();
+    restartReviewTimer();
   });
 }
 
