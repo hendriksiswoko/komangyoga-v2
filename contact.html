@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | MyBroBali — Private Bali Tour &amp; Driver</title>
+<meta name="description" content="Get in touch with MyBroBali to book a private Bali tour. WhatsApp, Instagram, email and pickup areas across South and Central Bali.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="site-nav solid">
+  <div class="container nav-inner">
+    <a href="index.html" class="logo">MyBro<span>Bali</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="tours.html">Tours</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="https://wa.me/6281234567890" class="btn btn-gold" target="_blank" rel="noopener">Book Now</a>
+      <button class="nav-toggle" aria-label="Menu">☰</button>
+    </div>
+  </div>
+</nav>
+
+<section class="page-hero">
+  <div class="container">
+    <div class="breadcrumb">Home / <span>Contact</span></div>
+    <h1>Let's plan your Bali trip</h1>
+    <p>The fastest way to reach me is WhatsApp, but the form below works too — I usually reply within the hour.</p>
+  </div>
+</section>
+
+<section>
+  <div class="container two-col" style="align-items:flex-start;">
+    <div class="reveal">
+      <div class="eyebrow">Send a message</div>
+      <h2>Tell me about your trip</h2>
+      <form class="contact-form" onsubmit="event.preventDefault(); window.open('https://wa.me/6281234567890?text=' + encodeURIComponent('Hi, my name is ' + this.name.value + '. ' + this.message.value), '_blank');">
+        <div>
+          <label for="name">Your name</label>
+          <input type="text" id="name" name="name" placeholder="e.g. Sarah Miller" required>
+        </div>
+        <div>
+          <label for="dates">Travel dates</label>
+          <input type="text" id="dates" name="dates" placeholder="e.g. 12–18 August 2026">
+        </div>
+        <div>
+          <label for="package">Interested tour</label>
+          <select id="package" name="package">
+            <option>Ubud Tour</option>
+            <option>Kintamani Tour</option>
+            <option>Uluwatu Tour</option>
+            <option>East Bali Tour</option>
+            <option>North Bali Tour</option>
+            <option>Nusa Penida Tour</option>
+            <option>Custom itinerary</option>
+          </select>
+        </div>
+        <div>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" placeholder="Number of people, pickup location, anything else I should know"></textarea>
+        </div>
+        <button type="submit" class="btn btn-gold" style="width:100%;">Send via WhatsApp</button>
+      </form>
+    </div>
+
+    <div class="reveal">
+      <div class="contact-info-card">
+        <h3>Contact details</h3>
+        <div class="contact-info-row"><div class="ic">◐</div><div><b style="display:block;color:#fff;">WhatsApp</b><span style="font-size:.9rem;">+62 812-3456-7890</span></div></div>
+        <div class="contact-info-row"><div class="ic">◑</div><div><b style="display:block;color:#fff;">Instagram</b><span style="font-size:.9rem;">@mybrobali.bali</span></div></div>
+        <div class="contact-info-row"><div class="ic">◒</div><div><b style="display:block;color:#fff;">TikTok</b><span style="font-size:.9rem;">@mybrobali.bali</span></div></div>
+        <div class="contact-info-row"><div class="ic">◓</div><div><b style="display:block;color:#fff;">Email</b><span style="font-size:.9rem;">hello@mybrobali.com</span></div></div>
+        <div class="contact-info-row"><div class="ic">◔</div><div><b style="display:block;color:#fff;">Based in</b><span style="font-size:.9rem;">Gianyar, Bali</span></div></div>
+      </div>
+      <div style="margin-top:24px;">
+        <div class="eyebrow">Areas we serve</div>
+        <div class="tag-list">
+          <span>Kuta</span><span>Seminyak</span><span>Canggu</span><span>Ubud</span><span>Nusa Dua</span><span>Sanur</span><span>Jimbaran</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0;">
+  <div class="container reveal">
+    <div style="border-radius:var(--radius-lg);overflow:hidden;border:1px solid var(--border);">
+      <iframe src="https://maps.google.com/maps?q=Gianyar,Bali&t=m&z=11&output=embed" loading="lazy" title="MyBroBali service area map" style="width:100%;height:340px;border:0;"></iframe>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">MyBro<span>Bali</span></div>
+        <p style="color:rgba(255,255,255,0.65);font-size:.9rem;">Your trusted private driver and tour guide in Bali.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="tours.html">Tours</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <a href="https://wa.me/6281234567890" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://tiktok.com" target="_blank" rel="noopener">TikTok</a>
+        <a href="mailto:hello@mybrobali.com">hello@mybrobali.com</a>
+      </div>
+      <div class="footer-map">
+        <h4>Location</h4>
+        <iframe src="https://maps.google.com/maps?q=Gianyar,Bali&t=m&z=10&output=embed" loading="lazy" title="MyBroBali location map"></iframe>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 MyBroBali Bali Tour. All rights reserved.</span>
+      <span>Placeholder images shown throughout, ready to be replaced with real photos.</span>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/6281234567890" class="wa-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">💬</a>
+
+<script src="js/main.js"></script>
+</body>
+</html>
