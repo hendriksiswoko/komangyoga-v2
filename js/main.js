@@ -52,13 +52,13 @@ if (heroSlides.length) {
   let heroTimer = setInterval(() => {
     heroIndex = (heroIndex + 1) % heroSlides.length;
     showHeroSlide(heroIndex);
-  }, 2000);
+  }, 3000);
   const restartHeroTimer = () => {
     clearInterval(heroTimer);
     heroTimer = setInterval(() => {
       heroIndex = (heroIndex + 1) % heroSlides.length;
       showHeroSlide(heroIndex);
-    }, 2000);
+    }, 3000);
   };
   heroDots.forEach((dot, i) => {
     dot.addEventListener('click', () => {
