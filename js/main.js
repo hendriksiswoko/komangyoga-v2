@@ -19,6 +19,15 @@ navLinks?.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
   navToggle.textContent = '☰';
 }));
 
+// ===== Dropdown submenu toggle =====
+document.querySelectorAll('.dropdown-caret').forEach(caret => {
+  caret.addEventListener('click', (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    caret.closest('.has-dropdown')?.classList.toggle('open');
+  });
+});
+
 // ===== Scroll reveal =====
 const revealEls = document.querySelectorAll('.reveal');
 const io = new IntersectionObserver((entries) => {
