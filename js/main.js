@@ -14,10 +14,13 @@ navToggle?.addEventListener('click', () => {
   navLinks.classList.toggle('open');
   navToggle.textContent = navLinks.classList.contains('open') ? '✕' : '☰';
 });
-navLinks?.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
-  navLinks.classList.remove('open');
-  navToggle.textContent = '☰';
-}));
+navLinks?.querySelectorAll('a').forEach(a => {
+  if (a.parentElement?.classList.contains('has-dropdown')) return; // dropdown toggle link, handled separately below
+  a.addEventListener('click', () => {
+    navLinks.classList.remove('open');
+    navToggle.textContent = '☰';
+  });
+});
 
 // ===== Dropdown submenu toggle =====
 document.querySelectorAll('.dropdown-caret').forEach(caret => {
@@ -25,6 +28,14 @@ document.querySelectorAll('.dropdown-caret').forEach(caret => {
     e.preventDefault();
     e.stopPropagation();
     caret.closest('.has-dropdown')?.classList.toggle('open');
+  });
+});
+
+// "Explore Our Bali Experiences" link opens the dropdown instead of navigating
+document.querySelectorAll('.has-dropdown > a').forEach(link => {
+  link.addEventListener('click', (e) => {
+    e.preventDefault();
+    link.closest('.has-dropdown')?.classList.toggle('open');
   });
 });
 
