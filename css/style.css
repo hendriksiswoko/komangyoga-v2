@@ -498,6 +498,8 @@ section{padding:88px 0;}
 .contact-info-card h3{color:#fff;}
 .contact-info-row{display:flex;gap:14px;align-items:flex-start;padding:16px 0;border-bottom:1px solid rgba(255,255,255,0.12);}
 .contact-info-row:last-child{border-bottom:none;}
+.contact-info-row a{color:rgba(255,255,255,0.8);transition:color .3s var(--ease);}
+.contact-info-row a:hover{color:var(--gold-500);}
 .contact-info-row .ic{
   width:38px;height:38px;border-radius:10px;background:rgba(255,255,255,0.1);
   display:flex;align-items:center;justify-content:center;color:var(--gold-500);flex-shrink:0;
