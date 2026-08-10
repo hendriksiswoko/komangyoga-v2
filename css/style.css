@@ -454,7 +454,7 @@ section{padding:88px 0;}
   .fleet-ground{width:220px;bottom:20px;}
 }
 
-.fleet-mini-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;}
+.fleet-mini-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:24px;}
 .fleet-mini-card{
   text-align:center;background:#fff;border:1px solid var(--border);border-radius:var(--radius-md);
   padding:20px 16px 26px;transition:transform .4s var(--ease),box-shadow .4s var(--ease);
