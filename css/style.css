@@ -146,7 +146,7 @@ section{padding:88px 0;}
     opacity:1;visibility:visible;pointer-events:auto;max-height:0;overflow:hidden;
     width:100%;transition:max-height .35s var(--ease);
   }
-  .has-dropdown.open .dropdown-menu{max-height:320px;margin-top:10px;padding-left:12px;}
+  .has-dropdown.open .dropdown-menu{transform:none;max-height:320px;margin-top:10px;padding-left:12px;}
   .dropdown-menu a{color:rgba(255,255,255,0.75) !important;font-size:1rem;padding:8px 0;white-space:normal;}
 }
 
