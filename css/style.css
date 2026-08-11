@@ -534,7 +534,7 @@ section{padding:88px 0;}
 }
 @media(max-width:600px){
   section{padding:56px 0;}
-  .grid-cards,.tour-grid,.fleet-grid,.gallery-grid,.qr-grid{grid-template-columns:1fr;}
+  .grid-cards,.tour-grid,.fleet-grid,.gallery-grid,.qr-grid,.footer-grid{grid-template-columns:1fr;}
   .hero{min-height:100svh;}
   .hero-arrow{display:none;}
   .cta-banner{padding:44px 24px;}
