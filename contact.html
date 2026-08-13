@@ -68,17 +68,17 @@
     <div class="reveal">
       <div class="eyebrow">Send a message</div>
       <h2>Tell me about your trip</h2>
-      <form class="contact-form" onsubmit="event.preventDefault(); window.open('https://wa.me/6287869152352?text=' + encodeURIComponent('Hi, my name is ' + this.name.value + '. ' + this.message.value), '_blank');">
+      <form class="contact-form" onsubmit="event.preventDefault(); var f=this; var msg='Hello MyBro Bali Tours & Services! 👋\n\nBooking Request\n\nName: '+f.name.value+'\n\nNationality: '+f.nationality.value+'\n\nTour Package: '+f.package.value+'\n\nTour Date: '+f.date.value+'\n\nGuests: '+f.guests.value+'\n\nPickup Location: '+f.pickup.value+'\n\nPickup Time: '+f.pickupTime.value+'\n\nPlaces you would like to visit:\n'+f.places.value+'\n\nReturn Location: '+f.returnLocation.value+'\n\nSpecial Request: '+f.special.value; window.open('https://wa.me/6287869152352?text=' + encodeURIComponent(msg), '_blank');">
         <div>
-          <label for="name">Your name</label>
+          <label for="name">Name</label>
           <input type="text" id="name" name="name" placeholder="e.g. Sarah Miller" required>
         </div>
         <div>
-          <label for="dates">Travel dates</label>
-          <input type="text" id="dates" name="dates" placeholder="e.g. 12–18 August 2026">
+          <label for="nationality">Nationality</label>
+          <input type="text" id="nationality" name="nationality" placeholder="e.g. Australia">
         </div>
         <div>
-          <label for="package">Interested tour</label>
+          <label for="package">Tour Package</label>
           <select id="package" name="package">
             <option>Best of Ubud Tour</option>
             <option>North Bali Nature Adventure</option>
@@ -90,8 +90,32 @@
           </select>
         </div>
         <div>
-          <label for="message">Message</label>
-          <textarea id="message" name="message" rows="4" placeholder="Number of people, pickup location, anything else I should know"></textarea>
+          <label for="date">Tour Date</label>
+          <input type="text" id="date" name="date" placeholder="e.g. 12–18 August 2026">
+        </div>
+        <div>
+          <label for="guests">Guests</label>
+          <input type="text" id="guests" name="guests" placeholder="e.g. 2 adults">
+        </div>
+        <div>
+          <label for="pickup">Pickup Location</label>
+          <input type="text" id="pickup" name="pickup" placeholder="e.g. Kuta">
+        </div>
+        <div>
+          <label for="pickupTime">Pickup Time</label>
+          <input type="text" id="pickupTime" name="pickupTime" placeholder="e.g. 08:00 AM">
+        </div>
+        <div>
+          <label for="places">Places you would like to visit</label>
+          <textarea id="places" name="places" rows="4" placeholder="1.&#10;2.&#10;3.&#10;4."></textarea>
+        </div>
+        <div>
+          <label for="returnLocation">Return Location</label>
+          <input type="text" id="returnLocation" name="returnLocation" placeholder="e.g. Kuta">
+        </div>
+        <div>
+          <label for="special">Special Request</label>
+          <textarea id="special" name="special" rows="3" placeholder="Anything else I should know"></textarea>
         </div>
         <button type="submit" class="btn btn-gold" style="width:100%;">Send via WhatsApp</button>
       </form>
